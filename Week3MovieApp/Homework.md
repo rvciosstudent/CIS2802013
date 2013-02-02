@@ -253,7 +253,9 @@ Open and edit self.title lines for DenzelIMDBDetailViewController.m
       (Images for icons need to be 72x72 iPad, 57x57 iPhone)
     - type in the name of the photos located in the supporting file
     
-13 Test APP!
+13) Test in iPad and iPhone Simulator
+
+14) Challenge: Modify app to new list with corresponding webpages. Example Photos, Recipes, etc. 
     
 
 
