@@ -124,23 +124,58 @@ Steps for Week 3:
         @property (retain, nonatomic) IBOutlet UIWebView *WebSite;
         
         @end
+   
+8) Connect both UIWebViews to File Owner and select WebView
 
-7) Go to page: MasterDetailDetailViewController.h
-   add code below comments
-   
-   @property (retain, nonatomic) IBOutlet UIWebView *WebSite;
-   
-8) Go to page: MasterDetailDetailViewController.m
-    add code below comments
-    
-    @synthesize WebSite = _WebSite; //towards top of page
+   - CTRL+CLICK+DRAG UIWebView for iPad and iPhone .xib files to File Owner
+   - Click on WebSite object to complete connection for iPad and iPhone UIWebView object
 
-9) Connect both UIWebViews to File Owner and select WebView
+9) Go to page: MasterDetailDetailViewController.m and add code for @sythesize
+
+    @implementation DenzelIMDBDetailViewController
+    //Add @sythesize Code
+    @synthesize detailItem = _detailItem;
+    @synthesize detailDescriptionLabel = _detailDescriptionLabel;
+    @synthesize masterPopoverController = _masterPopoverController;
+    @synthesize WebSite = _WebSite;
    
-10) Go to Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-   add below code commments
-   
+10) Go to Function: 
+    - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
       
+    Add Below comments and code.
+    
+    a. Comment out unneeded lines first
+    
+    - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+    {
+        //Comment out below line
+        //NSDate *object = _objects[indexPath.row];
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+            if (!self.detailViewController) {
+    	        self.detailViewController = [[[DenzelIMDB1DetailViewController alloc] initWithNibName:@"DenzelIMDB1DetailViewController_iPhone" bundle:nil] autorelease];
+    	    }
+            //Comment out below line
+    	    //self.detailViewController.detailItem = object;
+            [self.navigationController pushViewController:self.detailViewController animated:YES];
+        } else {
+            //Comment out below line
+            //self.detailViewController.detailItem = object;
+        }
+    }
+   
+    b. Add lines of code
+    
+    - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+    {
+    //Comment out below line
+    //NSDate *object = _objects[indexPath.row];
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        if (!self.detailViewController) {
+	        self.detailViewController = [[[DenzelIMDBDetailViewController alloc] initWithNibName:@"DenzelIMDBDetailViewController_iPhone" bundle:nil] autorelease];
+	    }
+        //comment out below line 
+        //self.detailViewController.detailItem = object;
+        //---
         //closes Menu
         self.detailViewController.detailItem =
         [NSString stringWithFormat:@"loadingmovie"];
@@ -149,6 +184,13 @@ Steps for Week 3:
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.detailViewController.WebSite loadRequest:req];
         
+        //---
+        
+        [self.navigationController pushViewController:self.detailViewController animated:YES];
+    }
+    //---
+    else
+    {
         //closes Menu
         self.detailViewController.detailItem =
         [NSString stringWithFormat:@"loadingmovie"];
@@ -156,6 +198,9 @@ Steps for Week 3:
         NSURL *url = [NSURL URLWithString:[MovieDetails objectAtIndex:indexPath.row]];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.detailViewController.WebSite loadRequest:req];
+    }
+
+}
         
 11) Add Icon
 
