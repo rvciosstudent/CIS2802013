@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1236F57716AE531600438741 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1236F57616AE531600438741 /* UIKit.framework */; };
+		1236F57916AE531600438741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1236F57816AE531600438741 /* Foundation.framework */; };
+		1236F57B16AE531600438741 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1236F57A16AE531600438741 /* CoreGraphics.framework */; };
+		1236F58116AE531600438741 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1236F57F16AE531600438741 /* InfoPlist.strings */; };
+		1236F58316AE531600438741 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1236F58216AE531600438741 /* main.m */; };
+		1236F58716AE531600438741 /* rvcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1236F58616AE531600438741 /* rvcAppDelegate.m */; };
+		1236F58916AE531600438741 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1236F58816AE531600438741 /* Default.png */; };
+		1236F58B16AE531600438741 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1236F58A16AE531600438741 /* Default@2x.png */; };
+		1236F58D16AE531600438741 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1236F58C16AE531600438741 /* Default-568h@2x.png */; };
+		1236F59016AE531600438741 /* rvcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1236F58F16AE531600438741 /* rvcViewController.m */; };
+		1236F59316AE531600438741 /* rvcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1236F59116AE531600438741 /* rvcViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1236F57216AE531600438741 /* WebBrowserPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebBrowserPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1236F57616AE531600438741 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1236F57816AE531600438741 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1236F57A16AE531600438741 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1236F57E16AE531600438741 /* WebBrowserPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebBrowserPad-Info.plist"; sourceTree = "<group>"; };
+		1236F58016AE531600438741 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1236F58216AE531600438741 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1236F58416AE531600438741 /* WebBrowserPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebBrowserPad-Prefix.pch"; sourceTree = "<group>"; };
+		1236F58516AE531600438741 /* rvcAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rvcAppDelegate.h; sourceTree = "<group>"; };
+		1236F58616AE531600438741 /* rvcAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rvcAppDelegate.m; sourceTree = "<group>"; };
+		1236F58816AE531600438741 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1236F58A16AE531600438741 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1236F58C16AE531600438741 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1236F58E16AE531600438741 /* rvcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rvcViewController.h; sourceTree = "<group>"; };
+		1236F58F16AE531600438741 /* rvcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rvcViewController.m; sourceTree = "<group>"; };
+		1236F59216AE531600438741 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/rvcViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1236F56F16AE531600438741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1236F57716AE531600438741 /* UIKit.framework in Frameworks */,
+				1236F57916AE531600438741 /* Foundation.framework in Frameworks */,
+				1236F57B16AE531600438741 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1236F56716AE531600438741 = {
+			isa = PBXGroup;
+			children = (
+				1236F57C16AE531600438741 /* WebBrowserPad */,
+				1236F57516AE531600438741 /* Frameworks */,
+				1236F57316AE531600438741 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1236F57316AE531600438741 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1236F57216AE531600438741 /* WebBrowserPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1236F57516AE531600438741 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1236F57616AE531600438741 /* UIKit.framework */,
+				1236F57816AE531600438741 /* Foundation.framework */,
+				1236F57A16AE531600438741 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1236F57C16AE531600438741 /* WebBrowserPad */ = {
+			isa = PBXGroup;
+			children = (
+				1236F58516AE531600438741 /* rvcAppDelegate.h */,
+				1236F58616AE531600438741 /* rvcAppDelegate.m */,
+				1236F58E16AE531600438741 /* rvcViewController.h */,
+				1236F58F16AE531600438741 /* rvcViewController.m */,
+				1236F59116AE531600438741 /* rvcViewController.xib */,
+				1236F57D16AE531600438741 /* Supporting Files */,
+			);
+			path = WebBrowserPad;
+			sourceTree = "<group>";
+		};
+		1236F57D16AE531600438741 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1236F57E16AE531600438741 /* WebBrowserPad-Info.plist */,
+				1236F57F16AE531600438741 /* InfoPlist.strings */,
+				1236F58216AE531600438741 /* main.m */,
+				1236F58416AE531600438741 /* WebBrowserPad-Prefix.pch */,
+				1236F58816AE531600438741 /* Default.png */,
+				1236F58A16AE531600438741 /* Default@2x.png */,
+				1236F58C16AE531600438741 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1236F57116AE531600438741 /* WebBrowserPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1236F59616AE531600438741 /* Build configuration list for PBXNativeTarget "WebBrowserPad" */;
+			buildPhases = (
+				1236F56E16AE531600438741 /* Sources */,
+				1236F56F16AE531600438741 /* Frameworks */,
+				1236F57016AE531600438741 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebBrowserPad;
+			productName = WebBrowserPad;
+			productReference = 1236F57216AE531600438741 /* WebBrowserPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1236F56916AE531600438741 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = rvc;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Charles Konkol";
+			};
+			buildConfigurationList = 1236F56C16AE531600438741 /* Build configuration list for PBXProject "WebBrowserPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1236F56716AE531600438741;
+			productRefGroup = 1236F57316AE531600438741 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1236F57116AE531600438741 /* WebBrowserPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1236F57016AE531600438741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1236F58116AE531600438741 /* InfoPlist.strings in Resources */,
+				1236F58916AE531600438741 /* Default.png in Resources */,
+				1236F58B16AE531600438741 /* Default@2x.png in Resources */,
+				1236F58D16AE531600438741 /* Default-568h@2x.png in Resources */,
+				1236F59316AE531600438741 /* rvcViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1236F56E16AE531600438741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1236F58316AE531600438741 /* main.m in Sources */,
+				1236F58716AE531600438741 /* rvcAppDelegate.m in Sources */,
+				1236F59016AE531600438741 /* rvcViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1236F57F16AE531600438741 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1236F58016AE531600438741 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1236F59116AE531600438741 /* rvcViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1236F59216AE531600438741 /* en */,
+			);
+			name = rvcViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1236F59416AE531600438741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1236F59516AE531600438741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1236F59716AE531600438741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebBrowserPad/WebBrowserPad-Prefix.pch";
+				INFOPLIST_FILE = "WebBrowserPad/WebBrowserPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1236F59816AE531600438741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebBrowserPad/WebBrowserPad-Prefix.pch";
+				INFOPLIST_FILE = "WebBrowserPad/WebBrowserPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1236F56C16AE531600438741 /* Build configuration list for PBXProject "WebBrowserPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1236F59416AE531600438741 /* Debug */,
+				1236F59516AE531600438741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1236F59616AE531600438741 /* Build configuration list for PBXNativeTarget "WebBrowserPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1236F59716AE531600438741 /* Debug */,
+				1236F59816AE531600438741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1236F56916AE531600438741 /* Project object */;
+}
