@@ -223,7 +223,7 @@ Open and edit self.title lines for DenzelIMDBDetailViewController.m
     - Click on each image in supporting files folder then click the "Make Localize Button"
     
    See Screenshot of Making Localized:
-  ![Locallized](http://screencast.com/t/JMfaGsljCxOq)
+  ![Locallized Steps](http://screencast.com/t/JMfaGsljCxOq)
    
     - Open Page: Supporting Files/IMDB Denzel-Info.plist
     - Edit Page by clicking the + symbol twice next to add 2 new image names.
