@@ -27,6 +27,7 @@ ScreenShot of App: http://screencast.com/t/hiRWbAssks
 3) Go to Page: DenzelIMDBMasterViewController.m
 
 4) Go to function: - (void)viewDidLoad and initilize 2 arrays, comment out lines, add code for iPad
+
     {
     // Add Code to Initialize Arrays
     //—-initialize  listOfMovies array—-
