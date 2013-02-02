@@ -130,7 +130,7 @@ Steps for Week 3:
    - CTRL+CLICK+DRAG UIWebView for iPad and iPhone .xib files to File Owner
    - Click on WebSite object to complete connection for iPad and iPhone UIWebView object
 
-9) Go to page: MasterDetailDetailViewController.m and add code for @sythesize
+9) Go to page: DenzelIMDBDetailViewController.m and add code for @sythesize
 
     @implementation DenzelIMDBDetailViewController
     //Add @sythesize Code
@@ -139,26 +139,21 @@ Steps for Week 3:
     @synthesize masterPopoverController = _masterPopoverController;
     @synthesize WebSite = _WebSite;
    
-10) Go to Function: 
-    - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-      
-    Add Below comments and code.
+10) Go to Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
-    - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-    {
     //Comment out below line
     //NSDate *object = _objects[indexPath.row];
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        if (!self.detailViewController) {
+	    if (!self.detailViewController) {
 	        self.detailViewController = [[[DenzelIMDBDetailViewController alloc] initWithNibName:@"DenzelIMDBDetailViewController_iPhone" bundle:nil] autorelease];
 	    }
         //comment out below line 
         //self.detailViewController.detailItem = object;
         //---
-        //Add Below Code
+        //closes Menu
         self.detailViewController.detailItem =
         [NSString stringWithFormat:@"loadingmovie"];
-        //Add Code - loads url into webview on iPhone
+        //loads url into webview on iPhone
         NSURL *url = [NSURL URLWithString:[MovieDetails objectAtIndex:indexPath.row]];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.detailViewController.WebSite loadRequest:req];
@@ -170,22 +165,63 @@ Steps for Week 3:
     //---
     else
     {
-        //Comment out below line
-        //self.detailViewController.detailItem = object;
-        //Add Below Code - closes Menu
+        //closes Menu
         self.detailViewController.detailItem =
         [NSString stringWithFormat:@"loadingmovie"];
-        //Add Below Code - loads url into webview on iPad
+        //loads url into webview on iPad
         NSURL *url = [NSURL URLWithString:[MovieDetails objectAtIndex:indexPath.row]];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.detailViewController.WebSite loadRequest:req];
+     }
+
+
+10) Change titles of menu in MasterView and DetailView
+
+Open and edit self.title line for DenzelIMDBMasterViewController.m
+    
+    - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+    {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        //Change Title
+        self.title = NSLocalizedString(@"Movie", @"Movie");
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+            self.clearsSelectionOnViewWillAppear = NO;
+            self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+        }
     }
-}
+    return self;
+    }
+    
+Open and edit self.title lines for DenzelIMDBDetailViewController.m
+    
+    - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+    {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        //Title of Middle DetailView
+        self.title = NSLocalizedString(@"IMDB Info", @"IMDB Info");
+    }
+    return self;
+    }
+    
+    
+    - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
+    {
+      //Title of Left DetailView
+    barButtonItem.title = NSLocalizedString(@"Movie", @"Movie");
+    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+    self.masterPopoverController = popoverController;
+    }
         
 11) Add Icon
 
-    - OPen Page: Supporting Files/IMDB Denzel-Info.plist
-    - Edit Page by clicking the + symbol twice next to add 2 new images.
+    - Make sure you have added 2 images in Supporting Files folder for Universal Apps
+      * 57x57 size for iPhone
+      * 72x72 size for iPad
+      I use http://pixlr.com to create images. Images can be .jpg or .png files
+    - Open Page: Supporting Files/IMDB Denzel-Info.plist
+    - Edit Page by clicking the + symbol twice next to add 2 new image names.
       (Images for icons need to be 72x72 iPad, 57x57 iPhone)
     - type in the name of the photos located in the supporting file
     
