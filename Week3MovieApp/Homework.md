@@ -12,7 +12,7 @@ Steps for Week 3:
    
 
 
-2) Go to Page: DenzelIMDBMasterViewController.h and add the 2 lines under comment //Declare Arrays
+2) Go to Page: DenzelIMDBMasterViewController.h and add the lines under the @interface line of code
 
 
     @interface DenzelIMDBMasterViewController : UITableViewController
