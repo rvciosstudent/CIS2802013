@@ -1,17 +1,23 @@
 Steps for Week 3:
 
 1) Download Week 3 App and Open
-2) Go to Page: MasterDetailMasterViewController.h and add the 2 lines under comment:
 
-    //Add 2 Arrays: listOfMovies, MovieDetails
+2) Go to Page: MasterDetailMasterViewController.h and add the 2 lines under comment //Declare Arrays
 
-    NSMutableArray *listOfMovies;
-    NSMutableArray *MovieDetails;
+
+    @interface DenzelIMDBMasterViewController : UITableViewController
+    {
+        //Declare Arrays
+        NSMutableArray *listOfMovies;
+        NSMutableArray *MovieDetails;
+    }
     
-3) Go to Page: MasterDetailMasterViewController.m  >  - (void)viewDidLoad
-   and initilize 2 arrays.
+3) Go to Page: MasterDetailMasterViewController.m
+4) Go to function: - (void)viewDidLoad
+   and initilize 2 arrays, comment out lines, add code for iPad
    
-    //—-initialize listOfMovies array—-
+    // Add Code to Initialize Arrays
+     //—-initialize  listOfMovies array—-
     listOfMovies = [[NSMutableArray alloc] init];
     [listOfMovies addObject:@"Training Day"];
     [listOfMovies addObject:@"Remember the Titans"];
@@ -43,17 +49,68 @@ Steps for Week 3:
     [MovieDetails addObject:@"http://www.imdb.com/title/tt0097441/"];
     [MovieDetails addObject:@"http://www.imdb.com/title/tt0117372/"];
     
+    //Comment out leftbarbutton logic since data is static
+    
+    //self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    // UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self //action:@selector(insertNewObject:)] autorelease];
+    //self.navigationItem.rightBarButtonItem = addButton;
+    
+    //Add Below code for iPad 
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
+        //---
+        self.detailViewController =
+        (DenzelIMDBDetailViewController *) [[self.splitViewController.viewControllers lastObject] topViewController];
+        //---
+    
+    }
+
+    
 4) Go to Function: - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-   add below code comments
    
-   return [listOfMovies count];
+    - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+    {
+        //Comment out return _objects.count;
+        //return _objects.count;
+        
+        //add return for array listofmovies
+        return [listOfMovies count];
+    }
    
 5) Go to Function: - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-   add below code comments
+   add below code and comments
    
-   cell.textLabel.text = [listOfMovies objectAtIndex:indexPath.row];
+    // Customize the appearance of table view cells.
+    - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+    {
+        static NSString *CellIdentifier = @"Cell";
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+            if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            }
+        }
+    
+        //Comment out NSDate use in original logic
+        //NSDate *object = _objects[indexPath.row];
+        
+        //Comment out exising cell.textlabel
+        //cell.textLabel.text = [object description];
+        
+        //Add below code referencing listofMovies
+        cell.textLabel.text = [listOfMovies objectAtIndex:indexPath.row];
+        
+        return cell;
+    }
    
 6) Add UIWebView to iPad and iPhone.Make sure and check "Scale Page to fit" 
+
+7) Connect both UIWebViews to File Owner and select WebView
+
+   - drag 
 
 7) Go to page: MasterDetailDetailViewController.h
    add code below comments
