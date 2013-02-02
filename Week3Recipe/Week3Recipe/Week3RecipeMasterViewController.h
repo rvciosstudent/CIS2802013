@@ -11,6 +11,9 @@
 @class Week3RecipeDetailViewController;
 
 @interface Week3RecipeMasterViewController : UITableViewController
+{
+    NSMutableArray *listOfRecipes;
+}
 
 @property (strong, nonatomic) Week3RecipeDetailViewController *detailViewController;
 

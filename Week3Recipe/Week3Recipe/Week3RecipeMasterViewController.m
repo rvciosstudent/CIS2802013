@@ -21,7 +21,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Master", @"Master");
+        self.title = NSLocalizedString(@"Recipe", @"Recipe");
         self.clearsSelectionOnViewWillAppear = NO;
         self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
     }
@@ -37,12 +37,20 @@
 
 - (void)viewDidLoad
 {
+    listOfRecipes = [[NSMutableArray alloc] init];
+    [listOfRecipes addObject:@"Guacamole"];
+    [listOfRecipes addObject:@"Cheese Dip"];
+   
+	// title
+    self.navigationItem.title = NSLocalizedString(@"Recipe", @"Recipe");
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)] autorelease];
-    self.navigationItem.rightBarButtonItem = addButton;
+    //Loading View
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
+    
+   self.detailViewController =
+   (Week3RecipeDetailViewController *) [[self.splitViewController.viewControllers
+                                          lastObject] topViewController];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,11 +74,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
+    //return [listOfRecipes count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    //return _objects.count;
+     return [listOfRecipes count];
 }
 
 // Customize the appearance of table view cells.
@@ -84,8 +94,9 @@
     }
 
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    //NSDate *object = _objects[indexPath.row];
+    //cell.textLabel.text = [object description];
+    cell.textLabel.text = [listOfRecipes objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -103,6 +114,7 @@
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
+   
 }
 
 /*
@@ -123,8 +135,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDate *object = _objects[indexPath.row];
-    self.detailViewController.detailItem = object;
+    //NSDate *object = _objects[indexPath.row];
+    //self.detailViewController.detailItem = object;
+    self.detailViewController.detailItem = [NSString stringWithFormat:@"What"];
+    // [NSString stringWithFormat:@"%@",[listOfRecipes objectAtIndex:indexPath.row]];
 }
 
 @end
