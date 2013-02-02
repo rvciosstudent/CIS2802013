@@ -1,6 +1,7 @@
 IMDBDenzel Movie App
 
 http://screencast.com/t/hiRWbAssks
+<img src="https://help.github.com/articles/creating-project-pages-manually">
 
 1) Open XCode. File > New Project > Master-Detail Application > Next
   
