@@ -25,9 +25,9 @@ Steps for Week 3:
 3) Go to Page: DenzelIMDBMasterViewController.m
 4) Go to function: - (void)viewDidLoad
    and initilize 2 arrays, comment out lines, add code for iPad
-   
+    {
     // Add Code to Initialize Arrays
-     //—-initialize  listOfMovies array—-
+    //—-initialize  listOfMovies array—-
     listOfMovies = [[NSMutableArray alloc] init];
     [listOfMovies addObject:@"Training Day"];
     [listOfMovies addObject:@"Remember the Titans"];
@@ -65,15 +65,24 @@ Steps for Week 3:
     // UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self //action:@selector(insertNewObject:)] autorelease];
     //self.navigationItem.rightBarButtonItem = addButton;
     
-    //Add Below code for iPad 
+    //Add Below code for iPad
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
         //---
         self.detailViewController =
         (DenzelIMDBDetailViewController *) [[self.splitViewController.viewControllers lastObject] topViewController];
-        //---
+
+    [super viewDidLoad];
+
+    }
     
+    //Comment Out Below Code so users cannot add new items or delete items from  list
+    // Do any additional setup after loading the view, typically from a nib.
+    //self.navigationItem.leftBarButtonItem = self.editButtonItem;
+
+    //UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self
+        //self.navigationItem.rightBarButtonItem = addButton;
     }
 
     
