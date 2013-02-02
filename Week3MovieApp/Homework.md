@@ -155,10 +155,10 @@ Steps for Week 3:
         //comment out below line 
         //self.detailViewController.detailItem = object;
         //---
-        //closes Menu
+        //Add Below Code
         self.detailViewController.detailItem =
         [NSString stringWithFormat:@"loadingmovie"];
-        //loads url into webview on iPhone
+        //Add Code - loads url into webview on iPhone
         NSURL *url = [NSURL URLWithString:[MovieDetails objectAtIndex:indexPath.row]];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.detailViewController.WebSite loadRequest:req];
@@ -172,10 +172,10 @@ Steps for Week 3:
     {
         //Comment out below line
         //self.detailViewController.detailItem = object;
-        //closes Menu
+        //Add Below Code - closes Menu
         self.detailViewController.detailItem =
         [NSString stringWithFormat:@"loadingmovie"];
-        //loads url into webview on iPad
+        //Add Below Code - loads url into webview on iPad
         NSURL *url = [NSURL URLWithString:[MovieDetails objectAtIndex:indexPath.row]];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.detailViewController.WebSite loadRequest:req];
