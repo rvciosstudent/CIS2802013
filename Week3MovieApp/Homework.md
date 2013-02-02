@@ -221,7 +221,9 @@ Open and edit self.title lines for DenzelIMDBDetailViewController.m
       * 72x72 size for iPad
       I use http://pixlr.com to create images. Images can be .jpg or .png files
     - Click on each image in supporting files folder then click the "Make Localize Button"
- !["Localizing Images"](http://screencast.com/t/JMfaGsljCxOq)
+ 
+ ![Localizing Images](http://screencast.com/t/JMfaGsljCxOq)
+ 
     - Open Page: Supporting Files/IMDB Denzel-Info.plist
     - Edit Page by clicking the + symbol twice next to add 2 new image names.
       (Images for icons need to be 72x72 iPad, 57x57 iPhone)
