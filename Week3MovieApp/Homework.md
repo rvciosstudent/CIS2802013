@@ -110,7 +110,20 @@ Steps for Week 3:
 
 7) Connect both UIWebViews to File Owner and select WebView
 
-   - drag 
+   - CTRL+CLICK+DRAG UIWebView to DenzelIMDBDetailViewController.h
+   - See http://screencast.com/t/t5MGiLOD
+
+        #import <UIKit/UIKit.h>
+        
+        @interface DenzelIMDBDetailViewController : UIViewController <UISplitViewControllerDelegate>
+        
+        @property (strong, nonatomic) id detailItem;
+        
+        @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+        
+        @property (retain, nonatomic) IBOutlet UIWebView *WebSite;
+        
+        @end
 
 7) Go to page: MasterDetailDetailViewController.h
    add code below comments
