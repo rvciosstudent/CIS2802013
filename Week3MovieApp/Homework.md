@@ -1,13 +1,18 @@
 Steps for Week 3:
 
 1) Open XCode. File > New Project > Master-Detail Application > Next
-   First Step: image://http://screencast.com/t/B7gNxJAbwIb
+  
+  - Fill out App Info: image://http://screencast.com/t/B7gNxJAbwIb
    
-   Second Step
+  - Click NEXT
+  
+  - Save project in MAC Folder. DO NOT CLICK SOURCE CONTROL
+  
+  - Click Create
    
 
 
-2) Go to Page: MasterDetailMasterViewController.h and add the 2 lines under comment //Declare Arrays
+2) Go to Page: DenzelIMDBMasterViewController.h and add the 2 lines under comment //Declare Arrays
 
 
     @interface DenzelIMDBMasterViewController : UITableViewController
@@ -17,7 +22,7 @@ Steps for Week 3:
         NSMutableArray *MovieDetails;
     }
     
-3) Go to Page: MasterDetailMasterViewController.m
+3) Go to Page: DenzelIMDBMasterViewController.m
 4) Go to function: - (void)viewDidLoad
    and initilize 2 arrays, comment out lines, add code for iPad
    
