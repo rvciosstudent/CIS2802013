@@ -159,6 +159,7 @@ Steps for Week 3:
     @synthesize WebSite = _WebSite;
    
 10) Go to Page: DenzelIMDBMasterViewController.m 
+  
   Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
     //Comment out below line
