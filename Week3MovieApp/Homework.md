@@ -200,7 +200,7 @@ ScreenShot of App: http://screencast.com/t/hiRWbAssks
     //self.detailViewController.detailItem = object;
 
 
-10) Change titles of menu in MasterView and DetailView
+11) Change titles of menu in MasterView and DetailView
 
 Open and edit self.title line for DenzelIMDBMasterViewController.m
     
@@ -239,7 +239,7 @@ Open and edit self.title lines for DenzelIMDBDetailViewController.m
     self.masterPopoverController = popoverController;
     }
         
-11) Add Icon
+12) Add Icon
 
     - Make sure you have added 2 images in Supporting Files folder for Universal Apps
       * 57x57 size for iPhone
