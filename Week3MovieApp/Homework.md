@@ -1,4 +1,4 @@
-IMDBDenzel Movie App
+IMDBDenzel Movie Apps
 
 ScreenShot of App: http://screencast.com/t/hiRWbAssks
 
