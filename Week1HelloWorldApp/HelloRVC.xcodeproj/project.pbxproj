@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12F7ECDD169BC55A00024552 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F7ECDC169BC55A00024552 /* UIKit.framework */; };
+		12F7ECDF169BC55A00024552 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F7ECDE169BC55A00024552 /* Foundation.framework */; };
+		12F7ECE1169BC55A00024552 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F7ECE0169BC55A00024552 /* CoreGraphics.framework */; };
+		12F7ECE7169BC55A00024552 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12F7ECE5169BC55A00024552 /* InfoPlist.strings */; };
+		12F7ECE9169BC55A00024552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F7ECE8169BC55A00024552 /* main.m */; };
+		12F7ECED169BC55A00024552 /* rvcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F7ECEC169BC55A00024552 /* rvcAppDelegate.m */; };
+		12F7ECEF169BC55A00024552 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F7ECEE169BC55A00024552 /* Default.png */; };
+		12F7ECF1169BC55A00024552 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F7ECF0169BC55A00024552 /* Default@2x.png */; };
+		12F7ECF3169BC55A00024552 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F7ECF2169BC55A00024552 /* Default-568h@2x.png */; };
+		12F7ECF6169BC55A00024552 /* rvcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F7ECF5169BC55A00024552 /* rvcViewController.m */; };
+		12F7ECF9169BC55A00024552 /* rvcViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F7ECF7169BC55A00024552 /* rvcViewController_iPhone.xib */; };
+		12F7ECFC169BC55A00024552 /* rvcViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F7ECFA169BC55A00024552 /* rvcViewController_iPad.xib */; };
+		12F7ED03169BCE1000024552 /* 0dribbble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12F7ED02169BCE1000024552 /* 0dribbble.jpg */; };
+		12F7ED06169BCEEA00024552 /* rvcapp.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F7ED05169BCEEA00024552 /* rvcapp.png */; };
+		12F7ED09169BD1DC00024552 /* rvcapp.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F7ED08169BD1DC00024552 /* rvcapp.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12F7ECD8169BC55A00024552 /* HelloRVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloRVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F7ECDC169BC55A00024552 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		12F7ECDE169BC55A00024552 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12F7ECE0169BC55A00024552 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		12F7ECE4169BC55A00024552 /* HelloRVC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloRVC-Info.plist"; sourceTree = "<group>"; };
+		12F7ECE6169BC55A00024552 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12F7ECE8169BC55A00024552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12F7ECEA169BC55A00024552 /* HelloRVC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloRVC-Prefix.pch"; sourceTree = "<group>"; };
+		12F7ECEB169BC55A00024552 /* rvcAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rvcAppDelegate.h; sourceTree = "<group>"; };
+		12F7ECEC169BC55A00024552 /* rvcAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rvcAppDelegate.m; sourceTree = "<group>"; };
+		12F7ECEE169BC55A00024552 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		12F7ECF0169BC55A00024552 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		12F7ECF2169BC55A00024552 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		12F7ECF4169BC55A00024552 /* rvcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rvcViewController.h; sourceTree = "<group>"; };
+		12F7ECF5169BC55A00024552 /* rvcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rvcViewController.m; sourceTree = "<group>"; };
+		12F7ECF8169BC55A00024552 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/rvcViewController_iPhone.xib; sourceTree = "<group>"; };
+		12F7ECFB169BC55A00024552 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/rvcViewController_iPad.xib; sourceTree = "<group>"; };
+		12F7ED02169BCE1000024552 /* 0dribbble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0dribbble.jpg; sourceTree = "<group>"; };
+		12F7ED05169BCEEA00024552 /* rvcapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rvcapp.png; sourceTree = "<group>"; };
+		12F7ED08169BD1DC00024552 /* rvcapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rvcapp.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12F7ECD5169BC55A00024552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F7ECDD169BC55A00024552 /* UIKit.framework in Frameworks */,
+				12F7ECDF169BC55A00024552 /* Foundation.framework in Frameworks */,
+				12F7ECE1169BC55A00024552 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12F7ECCD169BC55A00024552 = {
+			isa = PBXGroup;
+			children = (
+				12F7ED08169BD1DC00024552 /* rvcapp.png */,
+				12F7ECE2169BC55A00024552 /* MyHelloApplication */,
+				12F7ECDB169BC55A00024552 /* Frameworks */,
+				12F7ECD9169BC55A00024552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12F7ECD9169BC55A00024552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12F7ECD8169BC55A00024552 /* HelloRVC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12F7ECDB169BC55A00024552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12F7ECDC169BC55A00024552 /* UIKit.framework */,
+				12F7ECDE169BC55A00024552 /* Foundation.framework */,
+				12F7ECE0169BC55A00024552 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12F7ECE2169BC55A00024552 /* MyHelloApplication */ = {
+			isa = PBXGroup;
+			children = (
+				12F7ECEB169BC55A00024552 /* rvcAppDelegate.h */,
+				12F7ECEC169BC55A00024552 /* rvcAppDelegate.m */,
+				12F7ECF4169BC55A00024552 /* rvcViewController.h */,
+				12F7ECF5169BC55A00024552 /* rvcViewController.m */,
+				12F7ECF7169BC55A00024552 /* rvcViewController_iPhone.xib */,
+				12F7ECFA169BC55A00024552 /* rvcViewController_iPad.xib */,
+				12F7ECE3169BC55A00024552 /* Supporting Files */,
+			);
+			path = MyHelloApplication;
+			sourceTree = "<group>";
+		};
+		12F7ECE3169BC55A00024552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12F7ED05169BCEEA00024552 /* rvcapp.png */,
+				12F7ED02169BCE1000024552 /* 0dribbble.jpg */,
+				12F7ECE4169BC55A00024552 /* HelloRVC-Info.plist */,
+				12F7ECE5169BC55A00024552 /* InfoPlist.strings */,
+				12F7ECE8169BC55A00024552 /* main.m */,
+				12F7ECEA169BC55A00024552 /* HelloRVC-Prefix.pch */,
+				12F7ECEE169BC55A00024552 /* Default.png */,
+				12F7ECF0169BC55A00024552 /* Default@2x.png */,
+				12F7ECF2169BC55A00024552 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12F7ECD7169BC55A00024552 /* HelloRVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F7ECFF169BC55A00024552 /* Build configuration list for PBXNativeTarget "HelloRVC" */;
+			buildPhases = (
+				12F7ECD4169BC55A00024552 /* Sources */,
+				12F7ECD5169BC55A00024552 /* Frameworks */,
+				12F7ECD6169BC55A00024552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloRVC;
+			productName = MyHelloApplication;
+			productReference = 12F7ECD8169BC55A00024552 /* HelloRVC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12F7ECCF169BC55A00024552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = rvc;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Charles Konkol";
+			};
+			buildConfigurationList = 12F7ECD2169BC55A00024552 /* Build configuration list for PBXProject "HelloRVC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 12F7ECCD169BC55A00024552;
+			productRefGroup = 12F7ECD9169BC55A00024552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12F7ECD7169BC55A00024552 /* HelloRVC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12F7ECD6169BC55A00024552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F7ECE7169BC55A00024552 /* InfoPlist.strings in Resources */,
+				12F7ECEF169BC55A00024552 /* Default.png in Resources */,
+				12F7ECF1169BC55A00024552 /* Default@2x.png in Resources */,
+				12F7ECF3169BC55A00024552 /* Default-568h@2x.png in Resources */,
+				12F7ECF9169BC55A00024552 /* rvcViewController_iPhone.xib in Resources */,
+				12F7ECFC169BC55A00024552 /* rvcViewController_iPad.xib in Resources */,
+				12F7ED03169BCE1000024552 /* 0dribbble.jpg in Resources */,
+				12F7ED06169BCEEA00024552 /* rvcapp.png in Resources */,
+				12F7ED09169BD1DC00024552 /* rvcapp.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12F7ECD4169BC55A00024552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F7ECE9169BC55A00024552 /* main.m in Sources */,
+				12F7ECED169BC55A00024552 /* rvcAppDelegate.m in Sources */,
+				12F7ECF6169BC55A00024552 /* rvcViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		12F7ECE5169BC55A00024552 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F7ECE6169BC55A00024552 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12F7ECF7169BC55A00024552 /* rvcViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F7ECF8169BC55A00024552 /* en */,
+			);
+			name = rvcViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		12F7ECFA169BC55A00024552 /* rvcViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F7ECFB169BC55A00024552 /* en */,
+			);
+			name = rvcViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12F7ECFD169BC55A00024552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12F7ECFE169BC55A00024552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12F7ED00169BC55A00024552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyHelloApplication/HelloRVC-Prefix.pch";
+				INFOPLIST_FILE = "MyHelloApplication/HelloRVC-Info.plist";
+				PRODUCT_NAME = HelloRVC;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		12F7ED01169BC55A00024552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyHelloApplication/HelloRVC-Prefix.pch";
+				INFOPLIST_FILE = "MyHelloApplication/HelloRVC-Info.plist";
+				PRODUCT_NAME = HelloRVC;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12F7ECD2169BC55A00024552 /* Build configuration list for PBXProject "HelloRVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F7ECFD169BC55A00024552 /* Debug */,
+				12F7ECFE169BC55A00024552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12F7ECFF169BC55A00024552 /* Build configuration list for PBXNativeTarget "HelloRVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F7ED00169BC55A00024552 /* Debug */,
+				12F7ED01169BC55A00024552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12F7ECCF169BC55A00024552 /* Project object */;
+}
