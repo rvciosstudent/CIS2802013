@@ -55,9 +55,19 @@ Steps for Week 3:
    
 6) Add UIWebView to iPad and iPhone.Make sure and check "Scale Page to fit" 
 
-7) Connect both UIWebViews to File Owner and select WebView
+7) Go to page: MasterDetailDetailViewController.h
+   add code below comments
    
-6) Go to Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+   @property (retain, nonatomic) IBOutlet UIWebView *WebSite;
+   
+8) Go to page: MasterDetailDetailViewController.m
+    add code below comments
+    
+    @synthesize WebSite = _WebSite; //towards top of page
+
+9) Connect both UIWebViews to File Owner and select WebView
+   
+10) Go to Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
    add below code commments
    
       
@@ -76,6 +86,16 @@ Steps for Week 3:
         NSURL *url = [NSURL URLWithString:[MovieDetails objectAtIndex:indexPath.row]];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.detailViewController.WebSite loadRequest:req];
+        
+11) Add Icon
+
+    - OPen Page: Supporting Files/IMDB Denzel-Info.plist
+    - Edit Page by clicking the + symbol twice next to add 2 new images.
+      (Images for icons need to be 72x72 iPad, 57x57 iPhone)
+    - type in the name of the photos located in the supporting file
+    
+13 Test APP!
+    
 
 
 
