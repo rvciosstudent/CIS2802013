@@ -11,7 +11,7 @@ Steps for Week 3:
 3) Go to Page: MasterDetailMasterViewController.m  >  - (void)viewDidLoad
    and initilize 2 arrays.
    
-  //—-initialize listOfMovies array—-
+    //—-initialize listOfMovies array—-
     listOfMovies = [[NSMutableArray alloc] init];
     [listOfMovies addObject:@"Training Day"];
     [listOfMovies addObject:@"Remember the Titans"];
@@ -27,7 +27,7 @@ Steps for Week 3:
     [listOfMovies addObject:@"Glory"];
     [listOfMovies addObject:@"The Preacher’s Wife"];
     
-  //—-initialize  MovieDetails array—-
+    //—-initialize  MovieDetails array—-
     MovieDetails= [[NSMutableArray alloc] init];
     [MovieDetails addObject:@"http://www.imdb.com/title/tt0139654/"];
     [MovieDetails addObject:@"http://www.imdb.com/title/tt0210945/"];
@@ -52,6 +52,10 @@ Steps for Week 3:
    add below code comments
    
    cell.textLabel.text = [listOfMovies objectAtIndex:indexPath.row];
+   
+6) Add UIWebView to iPad and iPhone.Make sure and check "Scale Page to fit" 
+
+7) Connect both UIWebViews to File Owner and select WebView
    
 6) Go to Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
    add below code commments
