@@ -165,13 +165,13 @@ ScreenShot of App: http://screencast.com/t/hiRWbAssks
   
   Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
-    //Comment out below line
+     //Comment out below line
     //NSDate *object = _objects[indexPath.row];
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    if (!self.detailViewController) {
-	        self.detailViewController = [[[DenzelIMDBDetailViewController alloc] initWithNibName:@"DenzelIMDBDetailViewController_iPhone" bundle:nil] autorelease];
-	    }
-        //comment out below line 
+        if (!self.detailViewController) {
+            self.detailViewController = [[[DenzelIMDBDetailViewController alloc] initWithNibName:@"DenzelIMDBDetailViewController_iPhone" bundle:nil] autorelease];
+        }
+        //comment out below line
         //self.detailViewController.detailItem = object;
         //---
         //closes Menu
@@ -196,7 +196,8 @@ ScreenShot of App: http://screencast.com/t/hiRWbAssks
         NSURL *url = [NSURL URLWithString:[MovieDetails objectAtIndex:indexPath.row]];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.detailViewController.WebSite loadRequest:req];
-     }
+    }
+    //self.detailViewController.detailItem = object;
 
 
 10) Change titles of menu in MasterView and DetailView
