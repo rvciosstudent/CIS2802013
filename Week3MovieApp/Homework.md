@@ -158,7 +158,8 @@ Steps for Week 3:
     @synthesize masterPopoverController = _masterPopoverController;
     @synthesize WebSite = _WebSite;
    
-10) Go to Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+10) Go to Page: DenzelIMDBMasterViewController.m 
+  Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
     //Comment out below line
     //NSDate *object = _objects[indexPath.row];
