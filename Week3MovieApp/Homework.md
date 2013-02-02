@@ -1,4 +1,6 @@
-Steps for Week 3:
+IMDBDenzel Movie App
+
+[image]http://screencast.com/t/hiRWbAssks
 
 1) Open XCode. File > New Project > Master-Detail Application > Next
   
