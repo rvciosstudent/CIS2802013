@@ -144,27 +144,6 @@ Steps for Week 3:
       
     Add Below comments and code.
     
-    a. Comment out unneeded lines first
-    
-    - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-    {
-        //Comment out below line
-        //NSDate *object = _objects[indexPath.row];
-        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-            if (!self.detailViewController) {
-    	        self.detailViewController = [[[DenzelIMDB1DetailViewController alloc] initWithNibName:@"DenzelIMDB1DetailViewController_iPhone" bundle:nil] autorelease];
-    	    }
-            //Comment out below line
-    	    //self.detailViewController.detailItem = object;
-            [self.navigationController pushViewController:self.detailViewController animated:YES];
-        } else {
-            //Comment out below line
-            //self.detailViewController.detailItem = object;
-        }
-    }
-   
-    b. Add lines of code
-    
     - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     {
     //Comment out below line
@@ -191,6 +170,8 @@ Steps for Week 3:
     //---
     else
     {
+        //Comment out below line
+        //self.detailViewController.detailItem = object;
         //closes Menu
         self.detailViewController.detailItem =
         [NSString stringWithFormat:@"loadingmovie"];
@@ -199,7 +180,6 @@ Steps for Week 3:
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.detailViewController.WebSite loadRequest:req];
     }
-
 }
         
 11) Add Icon
