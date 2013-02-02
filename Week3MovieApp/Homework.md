@@ -51,6 +51,27 @@ Steps for Week 3:
 5) Go to Function: - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
    add below code comments
    
+   cell.textLabel.text = [listOfMovies objectAtIndex:indexPath.row];
+   
+6) Go to Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+   add below code commments
+   
+      
+        //closes Menu
+        self.detailViewController.detailItem =
+        [NSString stringWithFormat:@"loadingmovie"];
+        //loads url into webview on iPhone
+        NSURL *url = [NSURL URLWithString:[MovieDetails objectAtIndex:indexPath.row]];
+        NSURLRequest *req = [NSURLRequest requestWithURL:url];
+        [self.detailViewController.WebSite loadRequest:req];
+        
+        //closes Menu
+        self.detailViewController.detailItem =
+        [NSString stringWithFormat:@"loadingmovie"];
+        //loads url into webview on iPad
+        NSURL *url = [NSURL URLWithString:[MovieDetails objectAtIndex:indexPath.row]];
+        NSURLRequest *req = [NSURLRequest requestWithURL:url];
+        [self.detailViewController.WebSite loadRequest:req];
 
 
 
