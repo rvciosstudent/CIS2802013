@@ -1,6 +1,11 @@
 Steps for Week 3:
 
-1) Download Week 3 App and Open
+1) Open XCode. File > New Project > Master-Detail Application > Next
+   First Step: image://http://screencast.com/t/B7gNxJAbwIb
+   
+   Second Step
+   
+
 
 2) Go to Page: MasterDetailMasterViewController.h and add the 2 lines under comment //Declare Arrays
 
