@@ -245,7 +245,7 @@ Open and edit self.title lines for DenzelIMDBDetailViewController.m
     - Make sure you have added 2 images in Supporting Files folder for Universal Apps
       * 57x57 size for iPhone
       * 72x72 size for iPad
-      I use http://pixlr.com to create images. Images can be .jpg or .png files
+      I use http://pixlr.com to create images. Images can be .jpg
     - Click on each image in supporting files folder then click the "Make Localize Button"
     
    See Screenshot of Making Localized: image://http://screencast.com/t/JMfaGsljCxOq
