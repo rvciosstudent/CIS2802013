@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12A79FAB16BDD57C00072B40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A79FAA16BDD57C00072B40 /* UIKit.framework */; };
+		12A79FAD16BDD57C00072B40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A79FAC16BDD57C00072B40 /* Foundation.framework */; };
+		12A79FAF16BDD57C00072B40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A79FAE16BDD57C00072B40 /* CoreGraphics.framework */; };
+		12A79FB516BDD57C00072B40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12A79FB316BDD57C00072B40 /* InfoPlist.strings */; };
+		12A79FB716BDD57C00072B40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A79FB616BDD57C00072B40 /* main.m */; };
+		12A79FBB16BDD57C00072B40 /* MyFavesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A79FBA16BDD57C00072B40 /* MyFavesAppDelegate.m */; };
+		12A79FBD16BDD57C00072B40 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 12A79FBC16BDD57C00072B40 /* Default.png */; };
+		12A79FBF16BDD57C00072B40 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12A79FBE16BDD57C00072B40 /* Default@2x.png */; };
+		12A79FC116BDD57C00072B40 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12A79FC016BDD57C00072B40 /* Default-568h@2x.png */; };
+		12A79FC416BDD57C00072B40 /* MyFavesMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A79FC316BDD57C00072B40 /* MyFavesMasterViewController.m */; };
+		12A79FC716BDD57C00072B40 /* MyFavesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A79FC616BDD57C00072B40 /* MyFavesDetailViewController.m */; };
+		12A79FCA16BDD57C00072B40 /* MyFavesMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A79FC816BDD57C00072B40 /* MyFavesMasterViewController_iPhone.xib */; };
+		12A79FCD16BDD57C00072B40 /* MyFavesMasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A79FCB16BDD57C00072B40 /* MyFavesMasterViewController_iPad.xib */; };
+		12A79FD016BDD57C00072B40 /* MyFavesDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A79FCE16BDD57C00072B40 /* MyFavesDetailViewController_iPhone.xib */; };
+		12A79FD316BDD57C00072B40 /* MyFavesDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A79FD116BDD57C00072B40 /* MyFavesDetailViewController_iPad.xib */; };
+		12C635B016BE178E009C82E0 /* fav7272.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12C635AE16BE178E009C82E0 /* fav7272.jpg */; };
+		12C635B116BE178E009C82E0 /* fav5757.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12C635AF16BE178E009C82E0 /* fav5757.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12A79FA616BDD57C00072B40 /* Week 3 MyFaves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week 3 MyFaves.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12A79FAA16BDD57C00072B40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		12A79FAC16BDD57C00072B40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12A79FAE16BDD57C00072B40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		12A79FB216BDD57C00072B40 /* Week 3 MyFaves-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Week 3 MyFaves-Info.plist"; sourceTree = "<group>"; };
+		12A79FB416BDD57C00072B40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12A79FB616BDD57C00072B40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12A79FB816BDD57C00072B40 /* Week 3 MyFaves-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Week 3 MyFaves-Prefix.pch"; sourceTree = "<group>"; };
+		12A79FB916BDD57C00072B40 /* MyFavesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFavesAppDelegate.h; sourceTree = "<group>"; };
+		12A79FBA16BDD57C00072B40 /* MyFavesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFavesAppDelegate.m; sourceTree = "<group>"; };
+		12A79FBC16BDD57C00072B40 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		12A79FBE16BDD57C00072B40 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		12A79FC016BDD57C00072B40 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		12A79FC216BDD57C00072B40 /* MyFavesMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFavesMasterViewController.h; sourceTree = "<group>"; };
+		12A79FC316BDD57C00072B40 /* MyFavesMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFavesMasterViewController.m; sourceTree = "<group>"; };
+		12A79FC516BDD57C00072B40 /* MyFavesDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFavesDetailViewController.h; sourceTree = "<group>"; };
+		12A79FC616BDD57C00072B40 /* MyFavesDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFavesDetailViewController.m; sourceTree = "<group>"; };
+		12A79FC916BDD57C00072B40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyFavesMasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		12A79FCC16BDD57C00072B40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyFavesMasterViewController_iPad.xib; sourceTree = "<group>"; };
+		12A79FCF16BDD57C00072B40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyFavesDetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		12A79FD216BDD57C00072B40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyFavesDetailViewController_iPad.xib; sourceTree = "<group>"; };
+		12C635AE16BE178E009C82E0 /* fav7272.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fav7272.jpg; sourceTree = "<group>"; };
+		12C635AF16BE178E009C82E0 /* fav5757.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fav5757.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12A79FA316BDD57C00072B40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A79FAB16BDD57C00072B40 /* UIKit.framework in Frameworks */,
+				12A79FAD16BDD57C00072B40 /* Foundation.framework in Frameworks */,
+				12A79FAF16BDD57C00072B40 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A79F9B16BDD57C00072B40 = {
+			isa = PBXGroup;
+			children = (
+				12A79FB016BDD57C00072B40 /* MyFaves */,
+				12A79FA916BDD57C00072B40 /* Frameworks */,
+				12A79FA716BDD57C00072B40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12A79FA716BDD57C00072B40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12A79FA616BDD57C00072B40 /* Week 3 MyFaves.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12A79FA916BDD57C00072B40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12A79FAA16BDD57C00072B40 /* UIKit.framework */,
+				12A79FAC16BDD57C00072B40 /* Foundation.framework */,
+				12A79FAE16BDD57C00072B40 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12A79FB016BDD57C00072B40 /* MyFaves */ = {
+			isa = PBXGroup;
+			children = (
+				12A79FB916BDD57C00072B40 /* MyFavesAppDelegate.h */,
+				12A79FBA16BDD57C00072B40 /* MyFavesAppDelegate.m */,
+				12A79FC216BDD57C00072B40 /* MyFavesMasterViewController.h */,
+				12A79FC316BDD57C00072B40 /* MyFavesMasterViewController.m */,
+				12A79FC516BDD57C00072B40 /* MyFavesDetailViewController.h */,
+				12A79FC616BDD57C00072B40 /* MyFavesDetailViewController.m */,
+				12A79FC816BDD57C00072B40 /* MyFavesMasterViewController_iPhone.xib */,
+				12A79FCB16BDD57C00072B40 /* MyFavesMasterViewController_iPad.xib */,
+				12A79FCE16BDD57C00072B40 /* MyFavesDetailViewController_iPhone.xib */,
+				12A79FD116BDD57C00072B40 /* MyFavesDetailViewController_iPad.xib */,
+				12A79FB116BDD57C00072B40 /* Supporting Files */,
+			);
+			path = MyFaves;
+			sourceTree = "<group>";
+		};
+		12A79FB116BDD57C00072B40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12C635AE16BE178E009C82E0 /* fav7272.jpg */,
+				12C635AF16BE178E009C82E0 /* fav5757.jpg */,
+				12A79FB216BDD57C00072B40 /* Week 3 MyFaves-Info.plist */,
+				12A79FB316BDD57C00072B40 /* InfoPlist.strings */,
+				12A79FB616BDD57C00072B40 /* main.m */,
+				12A79FB816BDD57C00072B40 /* Week 3 MyFaves-Prefix.pch */,
+				12A79FBC16BDD57C00072B40 /* Default.png */,
+				12A79FBE16BDD57C00072B40 /* Default@2x.png */,
+				12A79FC016BDD57C00072B40 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12A79FA516BDD57C00072B40 /* Week 3 MyFaves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A79FD616BDD57C00072B40 /* Build configuration list for PBXNativeTarget "Week 3 MyFaves" */;
+			buildPhases = (
+				12A79FA216BDD57C00072B40 /* Sources */,
+				12A79FA316BDD57C00072B40 /* Frameworks */,
+				12A79FA416BDD57C00072B40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Week 3 MyFaves";
+			productName = MyFaves;
+			productReference = 12A79FA616BDD57C00072B40 /* Week 3 MyFaves.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12A79F9D16BDD57C00072B40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MyFaves;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "RVC Student";
+			};
+			buildConfigurationList = 12A79FA016BDD57C00072B40 /* Build configuration list for PBXProject "Week 3 MyFaves" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 12A79F9B16BDD57C00072B40;
+			productRefGroup = 12A79FA716BDD57C00072B40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12A79FA516BDD57C00072B40 /* Week 3 MyFaves */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12A79FA416BDD57C00072B40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A79FB516BDD57C00072B40 /* InfoPlist.strings in Resources */,
+				12A79FBD16BDD57C00072B40 /* Default.png in Resources */,
+				12A79FBF16BDD57C00072B40 /* Default@2x.png in Resources */,
+				12A79FC116BDD57C00072B40 /* Default-568h@2x.png in Resources */,
+				12A79FCA16BDD57C00072B40 /* MyFavesMasterViewController_iPhone.xib in Resources */,
+				12A79FCD16BDD57C00072B40 /* MyFavesMasterViewController_iPad.xib in Resources */,
+				12A79FD016BDD57C00072B40 /* MyFavesDetailViewController_iPhone.xib in Resources */,
+				12A79FD316BDD57C00072B40 /* MyFavesDetailViewController_iPad.xib in Resources */,
+				12C635B016BE178E009C82E0 /* fav7272.jpg in Resources */,
+				12C635B116BE178E009C82E0 /* fav5757.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12A79FA216BDD57C00072B40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A79FB716BDD57C00072B40 /* main.m in Sources */,
+				12A79FBB16BDD57C00072B40 /* MyFavesAppDelegate.m in Sources */,
+				12A79FC416BDD57C00072B40 /* MyFavesMasterViewController.m in Sources */,
+				12A79FC716BDD57C00072B40 /* MyFavesDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		12A79FB316BDD57C00072B40 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A79FB416BDD57C00072B40 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12A79FC816BDD57C00072B40 /* MyFavesMasterViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A79FC916BDD57C00072B40 /* en */,
+			);
+			name = MyFavesMasterViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		12A79FCB16BDD57C00072B40 /* MyFavesMasterViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A79FCC16BDD57C00072B40 /* en */,
+			);
+			name = MyFavesMasterViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		12A79FCE16BDD57C00072B40 /* MyFavesDetailViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A79FCF16BDD57C00072B40 /* en */,
+			);
+			name = MyFavesDetailViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		12A79FD116BDD57C00072B40 /* MyFavesDetailViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A79FD216BDD57C00072B40 /* en */,
+			);
+			name = MyFavesDetailViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12A79FD416BDD57C00072B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12A79FD516BDD57C00072B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12A79FD716BDD57C00072B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFaves/Week 3 MyFaves-Prefix.pch";
+				INFOPLIST_FILE = "MyFaves/Week 3 MyFaves-Info.plist";
+				PRODUCT_NAME = "Week 3 MyFaves";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		12A79FD816BDD57C00072B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFaves/Week 3 MyFaves-Prefix.pch";
+				INFOPLIST_FILE = "MyFaves/Week 3 MyFaves-Info.plist";
+				PRODUCT_NAME = "Week 3 MyFaves";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12A79FA016BDD57C00072B40 /* Build configuration list for PBXProject "Week 3 MyFaves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12A79FD416BDD57C00072B40 /* Debug */,
+				12A79FD516BDD57C00072B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12A79FD616BDD57C00072B40 /* Build configuration list for PBXNativeTarget "Week 3 MyFaves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12A79FD716BDD57C00072B40 /* Debug */,
+				12A79FD816BDD57C00072B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12A79F9D16BDD57C00072B40 /* Project object */;
+}
