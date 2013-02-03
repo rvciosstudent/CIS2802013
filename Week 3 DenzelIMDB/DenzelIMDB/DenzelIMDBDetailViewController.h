@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 RVC Student. All rights reserved.
 //
 
-//  Good Job
+//  Good Jobs
 
 #import <UIKit/UIKit.h>
 
