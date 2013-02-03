@@ -3,12 +3,14 @@ DetailView - MyFaves
 1) Open XCode. File > New Project > Master-Detail Application > Next
 
 Fill Project Info:  App Info: image://http://screencast.com/t/B7gNxJAbwIb
-•	ProjectName: MyFaves
-•	OrganizationName: RVC Student
-•	Company Idetifier:edu.rockvalleycollege
-•	ClassPrefix: MyFaves
-•	Devices: Univeral
-              (DO NOT CHECK ANY CHECKBOXES)
+
+•ProjectName: MyFaves
+•OrganizationName: RVC Student
+•Company Idetifier:edu.rockvalleycollege
+•ClassPrefix: MyFaves
+•Devices: Univeral
+(DO NOT CHECK ANY CHECKBOXES)
+
 - Click NEXT
     - Save project in MAC Folder. DO NOT CLICK SOURCE CONTRO
     - Click Create
