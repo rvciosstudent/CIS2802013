@@ -1,14 +1,14 @@
 //
-//  MasterDetailAppDelegate.h
-//  MasterDetail
+//  DenzelIMDBAppDelegate.h
+//  DenzelIMDB
 //
-//  Created by Wei-Meng Lee on 3/9/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Charles Konkol on 2/2/13.
+//  Copyright (c) 2013 RVC Student. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MasterDetailAppDelegate : UIResponder <UIApplicationDelegate>
+@interface DenzelIMDBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

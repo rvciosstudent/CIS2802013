@@ -1,25 +1,27 @@
 //
-//  MasterDetailMasterViewController.m
-//  MasterDetail
+//  DenzelIMDBMasterViewController.m
+//  DenzelIMDB
 //
-//  Created by Wei-Meng Lee on 3/9/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Charles Konkol on 2/2/13.
+//  Copyright (c) 2013 RVC Student. All rights reserved.
 //
 
-#import "MasterDetailMasterViewController.h"
+#import "DenzelIMDBMasterViewController.h"
 
-#import "MasterDetailDetailViewController.h"
+#import "DenzelIMDBDetailViewController.h"
 
-@implementation MasterDetailMasterViewController
+@interface DenzelIMDBMasterViewController () {
+    NSMutableArray *_objects;
+}
+@end
 
-@synthesize detailViewController = _detailViewController;
-
+@implementation DenzelIMDBMasterViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Master", @"Master");
+        self.title = NSLocalizedString(@"Movie", @"Movie");
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
             self.clearsSelectionOnViewWillAppear = NO;
             self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
@@ -31,21 +33,14 @@
 - (void)dealloc
 {
     [_detailViewController release];
+    [_objects release];
     [super dealloc];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
-
 - (void)viewDidLoad
 {
-    //---
-    //—-initialize the array—-
+    // Add Code to Initialize Arrays
+    //—-initialize  listOfMovies array—-
     listOfMovies = [[NSMutableArray alloc] init];
     [listOfMovies addObject:@"Training Day"];
     [listOfMovies addObject:@"Remember the Titans"];
@@ -61,6 +56,7 @@
     [listOfMovies addObject:@"Glory"];
     [listOfMovies addObject:@"The Preacher’s Wife"];
     
+    //—-initialize  MovieDetails array—-
     MovieDetails= [[NSMutableArray alloc] init];
     [MovieDetails addObject:@"http://www.imdb.com/title/tt0139654/"];
     [MovieDetails addObject:@"http://www.imdb.com/title/tt0210945/"];
@@ -76,59 +72,47 @@
     [MovieDetails addObject:@"http://www.imdb.com/title/tt0097441/"];
     [MovieDetails addObject:@"http://www.imdb.com/title/tt0117372/"];
     
-    //—-set the title—-
-    self.navigationItem.title = NSLocalizedString(@"Movies", @"Movies");
-    //---
-    [super viewDidLoad];
+    //Comment out leftbarbutton logic since data is static
     
-	// Do any additional setup after loading the view, typically from a nib.
+    //self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    // UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self //action:@selector(insertNewObject:)] autorelease];
+    //self.navigationItem.rightBarButtonItem = addButton;
+    
+    //Add Below code for iPad
+    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
         //---
-        self.detailViewController = 
-        (MasterDetailDetailViewController *) [[self.splitViewController.viewControllers lastObject] topViewController];
-        //---        
+        self.detailViewController =
+        (DenzelIMDBDetailViewController *) [[self.splitViewController.viewControllers lastObject] topViewController];
+
+    [super viewDidLoad];
     }
+	// Do any additional setup after loading the view, typically from a nib.
+    // self.navigationItem.leftBarButtonItem = self.editButtonItem;
+
+    //UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)] autorelease];
+    //self.navigationItem.rightBarButtonItem = addButton;
 }
 
-- (void)viewDidUnload
+- (void)didReceiveMemoryWarning
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)insertNewObject:(id)sender
 {
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
+    if (!_objects) {
+        _objects = [[NSMutableArray alloc] init];
     }
+    [_objects insertObject:[NSDate date] atIndex:0];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
-// Customize the number of sections in the table view.
+#pragma mark - Table View
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -136,8 +120,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    //return 1;
-    //---
+    //Comment out return _objects.count;
+    //return _objects.count;
+    
+    //add return for array listofmovies
     return [listOfMovies count];
 }
 
@@ -153,36 +139,34 @@
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
     }
-
-    // Configure the cell.
-    //cell.textLabel.text = NSLocalizedString(@"Detail", @"Detail");
-    //---
+    
+    //Comment out NSDate use in original logic
+    //NSDate *object = _objects[indexPath.row];
+    
+    //Comment out exising cell.textlabel
+    //cell.textLabel.text = [object description];
+    
+    //Add below code referencing listofMovies
     cell.textLabel.text = [listOfMovies objectAtIndex:indexPath.row];
     
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [_objects removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
+    }
 }
-*/
 
 /*
 // Override to support rearranging the table view.
@@ -202,11 +186,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //Comment out below line
+    //NSDate *object = _objects[indexPath.row];
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    if (!self.detailViewController) {
-	        self.detailViewController = [[[MasterDetailDetailViewController alloc] initWithNibName:@"MasterDetailDetailViewController_iPhone" bundle:nil] autorelease];
-	    }
-        //---        
+        if (!self.detailViewController) {
+            self.detailViewController = [[[DenzelIMDBDetailViewController alloc] initWithNibName:@"DenzelIMDBDetailViewController_iPhone" bundle:nil] autorelease];
+        }
+        //comment out below line
+        //self.detailViewController.detailItem = object;
+        //---
         //closes Menu
         self.detailViewController.detailItem =
         [NSString stringWithFormat:@"loadingmovie"];
@@ -230,7 +218,8 @@
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.detailViewController.WebSite loadRequest:req];
     }
-    //---    
+    //self.detailViewController.detailItem = object;
+   
 }
 
 @end

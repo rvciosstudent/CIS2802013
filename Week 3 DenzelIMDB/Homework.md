@@ -25,9 +25,8 @@ ScreenShot of App: http://screencast.com/t/hiRWbAssks
     }
     
 3) Go to Page: DenzelIMDBMasterViewController.m
-
-4) Go to function: - (void)viewDidLoad and initilize 2 arrays, comment out lines, add code for iPad
-
+4) Go to function: - (void)viewDidLoad
+   and initilize 2 arrays, comment out lines, add code for iPad
     {
     // Add Code to Initialize Arrays
     //—-initialize  listOfMovies array—-
@@ -254,9 +253,7 @@ Open and edit self.title lines for DenzelIMDBDetailViewController.m
       (Images for icons need to be 72x72 iPad, 57x57 iPhone)
     - type in the name of the photos located in the supporting file
     
-13) Test in iPad and iPhone Simulator
-
-14) Challenge: Modify app to new list with corresponding webpages. Example Photos, Recipes, etc. 
+13 Test APP!
     
 
 

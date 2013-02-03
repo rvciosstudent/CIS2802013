@@ -1,20 +1,20 @@
 //
-//  MasterDetailDetailViewController.m
-//  MasterDetail
+//  DenzelIMDBDetailViewController.m
+//  DenzelIMDB
 //
-//  Created by Wei-Meng Lee on 3/9/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Charles Konkol on 2/2/13.
+//  Copyright (c) 2013 RVC Student. All rights reserved.
 //
 
-#import "MasterDetailDetailViewController.h"
+#import "DenzelIMDBDetailViewController.h"
 
-@interface MasterDetailDetailViewController ()
+@interface DenzelIMDBDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
 
-@implementation MasterDetailDetailViewController
-
+@implementation DenzelIMDBDetailViewController
+//Add @sythesize Code
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
@@ -34,8 +34,8 @@
 - (void)setDetailItem:(id)newDetailItem
 {
     if (_detailItem != newDetailItem) {
-        [_detailItem release]; 
-        _detailItem = [newDetailItem retain]; 
+        [_detailItem release];
+        _detailItem = [newDetailItem retain];
 
         // Update the view.
         [self configureView];
@@ -55,14 +55,6 @@
     }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -70,49 +62,17 @@
     [self configureView];
 }
 
-- (void)viewDidUnload
+- (void)didReceiveMemoryWarning
 {
-    [self setWebSite:nil];
-        [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"IMDB", @"IMDB");
+        self.title = NSLocalizedString(@"IMDB Info", @"IMDB Info");
     }
     return self;
 }
@@ -121,7 +81,7 @@
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
-    barButtonItem.title = NSLocalizedString(@"Movies", @"Movies");
+    barButtonItem.title = NSLocalizedString(@"Movie", @"Movie");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
 }
