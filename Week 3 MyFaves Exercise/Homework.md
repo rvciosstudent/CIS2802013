@@ -95,9 +95,9 @@ Fill Project Info:  App Info: image://http://screencast.com/t/B7gNxJAbwIb
 
 6) Add UIWebView to iPad and iPhone.Make sure and check "Scale Page to fit"
 
-7) Connect both UIWebViews to File Owner and select WebView
+7) Connect ONE of the UIWebViews to MyFavesDetailViewController.h > Choose Outlet > NAME: 'WebSite'
 
-   CTRL+CLICK+DRAG UIWebView to MyFavesDetailViewController.h //iPad or iPhone .xib
+   CTRL+CLICK+DRAG UIWebView to MyFavesDetailViewController.h (iPad or iPhone .xib)
 
    See http://screencast.com/t/t5MGiLOD
 
@@ -113,10 +113,10 @@ Fill Project Info:  App Info: image://http://screencast.com/t/B7gNxJAbwIb
 
     @end
 
-8) Connect both UIWebViews to File Owner and select WebView
+8) Connect both UIWebViews to FileOwner
 
-   CTRL+CLICK+DRAG FileOwner to UIWebView for iPad and iPhone .xib files.
-   Click on WebSite object to complete connection for iPad and iPhone UIWebView object
+   CTRL+CLICK+DRAG BOTH UIWebView to FileOwner for iPad and iPhone .xib files.
+   Click on 'WebSite' object to complete connection for iPad and iPhone UIWebView object
 
 9) Go to page: MyFavesDetailViewController.m and add code for @sythesize
 
