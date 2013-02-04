@@ -204,6 +204,7 @@ Open and edit self.title lines for MyFavesDetailViewController.m
   * 57x57 size for iPhone
   * 72x72 size for iPad
   I use http://pixlr.com to create images. Images can be .jpg files
+  download images: image://https://github.com/ioscourse/Week-3-MyFaves-Exercise/tree/master/MyFaves
 - Click on each image in supporting files folder then click the "Make Localize Button"
 
 See Screenshot of Making Localized: image://http://screencast.com/t/JMfaGsljCxOq
