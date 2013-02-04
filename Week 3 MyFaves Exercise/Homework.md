@@ -164,7 +164,7 @@ Function: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NS
 Open and edit self.title line for MyFavesMasterViewController.m
 
     - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-   {
+    {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
     //Change Title
