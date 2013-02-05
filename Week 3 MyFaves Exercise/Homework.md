@@ -1,6 +1,6 @@
 DetailView - MyFaves
 
-1) Open XCode. File > New Project > Master-Detail Application > Next
+1) Open XCode. File > New Project > Master-Detail Application > Next 
 
 Fill Project Info:  App Info: image://http://screencast.com/t/B7gNxJAbwIb
     
@@ -115,7 +115,7 @@ Fill Project Info:  App Info: image://http://screencast.com/t/B7gNxJAbwIb
 
 8) Connect both UIWebViews to FileOwner
 
-   CTRL+CLICK+DRAG BOTH UIWebView to FileOwner for iPad and iPhone .xib files.
+   CTRL+CLICK+DRAG FileOwner to UIWebView for iPad and iPhone .xib files.
    Click on 'WebSite' object to complete connection for iPad and iPhone UIWebView object
 
 9) Go to page: MyFavesDetailViewController.m and add code for @sythesize
@@ -200,7 +200,7 @@ Open and edit self.title lines for MyFavesDetailViewController.m
 
 12) Add Icon
 
-- Make sure you have added 2 images in Supporting Files folder for Universal Apps
+- Drag 2 images in "Supporting Files" folder for Universal Apps
   * 57x57 size for iPhone
   * 72x72 size for iPad
   I use http://pixlr.com to create images. Images can be .jpg files
@@ -211,9 +211,10 @@ Open and edit self.title lines for MyFavesDetailViewController.m
 See Screenshot of Making Localized: image://http://screencast.com/t/JMfaGsljCxOq
 
 - Open Page: Supporting Files/MyFavs-Info.plist
-- Edit Page by clicking the + symbol twice next to add 2 new image names.
+- Edit by clicking the + symbol at top of list and adding "file icons" 
+- Click the + symbol twice next "file icons" to add item0, item1.
   (Images for icons need to be 72x72 iPad, 57x57 iPhone)
-- type in the name of the photos located in the supporting file
+- type in the name of the photos located in the supporting file in item0, item1
 
 13) Test in iPad and iPhone Simulator
 
