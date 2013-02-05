@@ -14,3 +14,4 @@ adhoc/
 build/
 
 xcuserdata
+*.xcuserstate
