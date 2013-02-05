@@ -200,7 +200,7 @@ Open and edit self.title lines for MyFavesDetailViewController.m
 
 12) Add Icon
 
-- Make sure you have added 2 images in Supporting Files folder for Universal Apps
+- Make sure you drag 2 images in Supporting Files folder for Universal Apps
   * 57x57 size for iPhone
   * 72x72 size for iPad
   I use http://pixlr.com to create images. Images can be .jpg files
